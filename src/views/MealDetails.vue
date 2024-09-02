@@ -66,7 +66,9 @@ onMounted(() => {
       </div>
       <div class="px-10 max-w-[100%] mb-2 font-sans font-semibold text-lg">
         <h2 class="font-bold flex justify-center text-3xl text-orange-600 mb-4"> How to Prepare ? </h2>
-       <p class="pb-5">{{ meal.strInstructions }}</p>
+       <p class="pb-5">{{ meal.strInstructions }}
+        <a :href="meal.strYoutube" target="_blank" class="text-blue-600 hover:underline"> Watch Full video on Youtube.</a>
+       </p>
       </div>
   </div>
 </template>
